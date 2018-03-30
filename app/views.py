@@ -7,7 +7,7 @@ from .app_class import WeConnect
 app.config['JWT_SECRET_KEY'] = os.urandom(20)
 jwt = JWTManager(app)
 
-weconnect = WeConnect()
+weconnect = Connect()
 
 @app.route('/api/v1/auth/register', methods=['POST'])
 def register_user():
