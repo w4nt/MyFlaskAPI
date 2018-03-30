@@ -5,7 +5,7 @@ the interactions of the user with the application by
 utilizing the other classes defined here."""
 
 
-class WeConnect():
+class Connect():
     """Overall application class.
     Manages the other classes"""
 
@@ -56,7 +56,8 @@ class WeConnect():
             }
             # add dictionary to self.userdb list
             self.userdb.append(new_user)
-            return True
+            return dict(user_id=new_user['id'], first_name=new_user['first_name'],
+                        last_name=new_user['last_name'], email=new_user['email'])
 
     def login_user(self, email, password):
         """Logs in users to the application.
