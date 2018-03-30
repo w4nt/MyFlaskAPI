@@ -2,7 +2,7 @@ import bcrypt, flask, json, flask_jwt_extended, unittest
 
 from app import app, views
 
-class WeConnectViews(unittest.TestCase):
+class ConnectViews(unittest.TestCase):
     """Tests the enpoints contains in views.py"""
     def setUp(self):
         self.weconnect_test = app.test_client(self)
